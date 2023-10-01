@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Logica da programação em Javascript</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="rectangle">
+       
+        <h3> Lógica com Javascript </h3>
+        <h1> Mini Calculadora </h1>
+
+        <section class="button">
+        <div class="btn-group" role="group" aria-label="Basic example">
+        <button onclick= "calcular('+')">+</button>
+        <button onclick= "calcular('-')">-</button>
+        <button onclick= "calcular('*')">*</button>
+        <button onclick= "calcular('/')">/</button>
+        </div>
+
+        <h3> Resultado = </h3>
+        <div id="output"> </div>
+     
+
+        </section>
+    </div>
+
+    <footer>
+        <p>Feito por Paloma Rossi, 2023 </p>
+        <p> Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/pintura-abstrata-em-preto-e-branco-3826430/ </p>
+    </footer>
+
+        <script>
+           
+            var n1 = prompt ('Digite 1 número');
+            n1 = parseFloat(n1);
+
+            escreve();
+
+            function escreve (){
+                var output = document.querySelector('#output');
+                output.innerHTML = n1;
+            }
+
+            function calcular (simbolo){
+                var n = prompt('Digite outro número');
+                n=parseFloat(n);
+           
+                switch(simbolo){
+                    case '+':
+                    n1 +=n; 
+                    break;
+                    case '-':
+                    n1 -=n; 
+                    break;
+
+                    case '*':
+                    n1 *=n; 
+                    break;
+
+                    case '/':
+                    n1 /=n; 
+                    break; 
+                }
+                
+                    
+
+                escreve();
+            }
+
+
+
+        </script>
+    </body>
+</html>
