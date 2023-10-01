@@ -1,0 +1,43 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    padding: 20px;
+    background-image: url(fundo_calculadora.jpg);
+}
+ 
+.rectangle {
+    width: 400px; /* Largura do retângulo */
+    height: 300px; /* Altura do retângulo */
+    background-color: #f0f0f0; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border: 2px solid #82e630; /* Borda */
+    border-radius: 10px; /* Raio da borda (borda arredondada) */
+    margin: 50px auto; /* Margem (posicionamento central) */
+  }
+  
+  
+.button {
+    text-align: center;
+    font-size: 80;
+    margin-bottom: 10;
+}
+
+h1 {text-align: center;
+    padding: 10px;
+}
+
+p { text-align: center;
+
+}
+
+h3 { text-align: center;
+
+}
+
+
+
+footer {
+    color: #f0f0f0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
